@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/',views.signaction,name='signup'),
     path('login/',views.loginaction,name='login'),
-    path('welcome/',views.welcome,name='welcome'),
+    path('',views.welcome,name='welcome'),
     path('input/',views.input,name='input'),
+    path('logout/',views.logout,name='logout')
 ]
